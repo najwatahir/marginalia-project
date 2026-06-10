@@ -1,4 +1,4 @@
-# marginalia-project
+# Marginalia App
 
 Project ini merupakan project mata kuliah Pemrograman Mobile. Project ini merupakan sebuah aplikasi mobile untuk review artikel yang menerapkan recycler view dan basic CRUD.
 
