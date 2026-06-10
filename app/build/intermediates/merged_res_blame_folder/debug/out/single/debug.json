@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-merged_res-33:/drawable_bg_summary_block.xml.flat",
+        "source": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-main-35:/drawable/bg_summary_block.xml"
+    },
+    {
+        "merged": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-merged_res-33:/layout_activity_detail.xml.flat",
+        "source": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-main-35:/layout/activity_detail.xml"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-merged_res-33:/drawable_bg_source_chip.xml.flat",
+        "source": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-main-35:/drawable/bg_source_chip.xml"
+    },
+    {
+        "merged": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-merged_res-33:/drawable_circle_accent.xml.flat",
+        "source": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-main-35:/drawable/circle_accent.xml"
+    },
+    {
+        "merged": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-merged_res-33:/anim_slide_up.xml.flat",
+        "source": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-main-35:/anim/slide_up.xml"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-merged_res-33:/layout_activity_main.xml.flat",
+        "source": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-merged_res-33:/drawable_bg_stats_row.xml.flat",
+        "source": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-main-35:/drawable/bg_stats_row.xml"
+    },
+    {
+        "merged": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-merged_res-33:/anim_fade_in.xml.flat",
+        "source": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-main-35:/anim/fade_in.xml"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-merged_res-33:/drawable_bg_spinner.xml.flat",
+        "source": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-main-35:/drawable/bg_spinner.xml"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-merged_res-33:/anim_fade_out.xml.flat",
+        "source": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-main-35:/anim/fade_out.xml"
+    },
+    {
+        "merged": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-merged_res-33:/drawable_bg_chip.xml.flat",
+        "source": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-main-35:/drawable/bg_chip.xml"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-merged_res-33:/layout_activity_splash.xml.flat",
+        "source": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-main-35:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-merged_res-33:/layout_item_article_review.xml.flat",
+        "source": "/Users/m/.gradle/daemon/8.2/com.example.articlereview.app-main-35:/layout/item_article_review.xml"
+    },
+    {
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    }
+]

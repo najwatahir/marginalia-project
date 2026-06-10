@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_green">#6B9E78</color>
+    <color name="accent_green_dark">#4E7A5A</color>
+    <color name="accent_green_light">#EBF3EC</color>
+    <color name="bg_cream">#F5F4F0</color>
+    <color name="divider">#EFEFEF</color>
+    <color name="tag_economics">#4A7FA5</color>
+    <color name="tag_lifestyle">#C0A050</color>
+    <color name="tag_philosophy">#7C6EAE</color>
+    <color name="tag_psychology">#C0785A</color>
+    <color name="tag_science">#5A9EA0</color>
+    <color name="tag_technology">#7A8FA0</color>
+    <color name="tag_wellbeing">#6B9E78</color>
+    <color name="text_hint">#ABABAB</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#6B6B6B</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Marginalia</string>
+    <style name="Theme.ArticleReview" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/accent_green</item>
+        <item name="colorPrimaryVariant">@color/accent_green_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_green</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/bg_cream</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.ArticleReview.Splash" parent="Theme.ArticleReview">
+        <item name="android:windowBackground">@color/bg_cream</item>
+        <item name="android:statusBarColor">@color/bg_cream</item>
+    </style>
+</resources>
