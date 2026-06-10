@@ -5,4 +5,4 @@ Project ini merupakan project mata kuliah Pemrograman Mobile. Project ini merupa
 ## Tim Pengembang
 1. Najwa Tahir (2405551039)
 2. Marcell Christian Santoso (2405551153)
-3. 2405551103 (Ni Luh Putu Indah Suari)
+3. Ni Luh Putu Indah Suari (2405551103)
