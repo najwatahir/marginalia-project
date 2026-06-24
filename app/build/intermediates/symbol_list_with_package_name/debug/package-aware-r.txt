@@ -3181,7 +3181,6 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
-id appBarLayout
 id arc
 id asConfigured
 id async
@@ -3201,6 +3200,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnBack
+id btnSubmit
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3284,9 +3284,13 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etAuthor
+id etReviewContent
+id etTitle
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fabAddReview
 id fade
 id fill
 id fill_horizontal
@@ -3470,6 +3474,7 @@ id ratingBar
 id ratingBarDetail
 id ratio
 id rectangles
+id recyclerView
 id report_drawn
 id reverseSawtooth
 id right
@@ -3478,7 +3483,6 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
-id rvArticles
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3519,7 +3523,6 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
-id spinnerFilter
 id spline
 id split_action_bar
 id spread
@@ -3589,7 +3592,6 @@ id transition_transform
 id triangle
 id tvAppName
 id tvAuthor
-id tvAvgRating
 id tvDate
 id tvDetailAuthor
 id tvDetailDate
@@ -3605,14 +3607,12 @@ id tvMood
 id tvRating
 id tvReadingTime
 id tvRecommendedFor
-id tvReviewCount
 id tvSource
 id tvSummary
 id tvTag
 id tvTagline
 id tvTakeaways
 id tvTitle
-id tvTotalTime
 id unchecked
 id uniform
 id unlabeled
@@ -3750,6 +3750,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_review
 layout activity_detail
 layout activity_main
 layout activity_splash

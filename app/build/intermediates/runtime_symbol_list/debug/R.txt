@@ -3180,7 +3180,6 @@ int id animateToEnd 0x7f08004c
 int id animateToStart 0x7f08004d
 int id antiClockwise 0x7f08004e
 int id anticipate 0x7f08004f
-int id appBarLayout 0x7f080050
 int id arc 0x7f080051
 int id asConfigured 0x7f080052
 int id async 0x7f080053
@@ -3200,6 +3199,7 @@ int id bounceBoth 0x7f080060
 int id bounceEnd 0x7f080061
 int id bounceStart 0x7f080062
 int id btnBack 0x7f080063
+int id btnSubmit 0x7f080219
 int id buttonPanel 0x7f080064
 int id cache_measures 0x7f080065
 int id callMeasure 0x7f080066
@@ -3283,9 +3283,13 @@ int id end 0x7f0800b3
 int id endToStart 0x7f0800b4
 int id enterAlways 0x7f0800b5
 int id enterAlwaysCollapsed 0x7f0800b6
+int id etAuthor 0x7f08021a
+int id etReviewContent 0x7f08021b
+int id etTitle 0x7f08021c
 int id exitUntilCollapsed 0x7f0800b7
 int id expand_activities_button 0x7f0800b8
 int id expanded_menu 0x7f0800b9
+int id fabAddReview 0x7f080217
 int id fade 0x7f0800ba
 int id fill 0x7f0800bb
 int id fill_horizontal 0x7f0800bc
@@ -3469,6 +3473,7 @@ int id ratingBar 0x7f08016d
 int id ratingBarDetail 0x7f08016e
 int id ratio 0x7f08016f
 int id rectangles 0x7f080170
+int id recyclerView 0x7f080218
 int id report_drawn 0x7f080171
 int id reverseSawtooth 0x7f080172
 int id right 0x7f080173
@@ -3477,7 +3482,6 @@ int id right_icon 0x7f080175
 int id right_side 0x7f080176
 int id rounded 0x7f080177
 int id row_index_key 0x7f080178
-int id rvArticles 0x7f080179
 int id save_non_transition_alpha 0x7f08017a
 int id save_overlay_view 0x7f08017b
 int id sawtooth 0x7f08017c
@@ -3518,7 +3522,6 @@ int id snapMargins 0x7f08019e
 int id south 0x7f08019f
 int id spacer 0x7f0801a0
 int id special_effects_controller_view_tag 0x7f0801a1
-int id spinnerFilter 0x7f0801a2
 int id spline 0x7f0801a3
 int id split_action_bar 0x7f0801a4
 int id spread 0x7f0801a5
@@ -3588,7 +3591,6 @@ int id transition_transform 0x7f0801e4
 int id triangle 0x7f0801e5
 int id tvAppName 0x7f0801e6
 int id tvAuthor 0x7f0801e7
-int id tvAvgRating 0x7f0801e8
 int id tvDate 0x7f0801e9
 int id tvDetailAuthor 0x7f0801ea
 int id tvDetailDate 0x7f0801eb
@@ -3604,14 +3606,12 @@ int id tvMood 0x7f0801f4
 int id tvRating 0x7f0801f5
 int id tvReadingTime 0x7f0801f6
 int id tvRecommendedFor 0x7f0801f7
-int id tvReviewCount 0x7f0801f8
 int id tvSource 0x7f0801f9
 int id tvSummary 0x7f0801fa
 int id tvTag 0x7f0801fb
 int id tvTagline 0x7f0801fc
 int id tvTakeaways 0x7f0801fd
 int id tvTitle 0x7f0801fe
-int id tvTotalTime 0x7f0801ff
 int id unchecked 0x7f080200
 int id uniform 0x7f080201
 int id unlabeled 0x7f080202
@@ -3749,6 +3749,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_add_review 0x7f0b006f
 int layout activity_detail 0x7f0b001c
 int layout activity_main 0x7f0b001d
 int layout activity_splash 0x7f0b001e

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F4F0"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Review Baru"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul Artikel"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="2dp"/>
+
+        <EditText
+            android:id="@+id/etAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Penulis / Sumber (ex: Medium)"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="2dp"/>
+
+        <EditText
+            android:id="@+id/etReviewContent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="top|start"
+            android:hint="Tulis review kamu di sini..."
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="2dp"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Simpan Review"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#6B9E78" />
+
+    </LinearLayout>
+</ScrollView>

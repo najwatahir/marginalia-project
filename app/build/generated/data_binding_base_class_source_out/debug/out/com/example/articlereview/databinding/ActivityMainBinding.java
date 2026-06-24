@@ -4,58 +4,38 @@ package com.example.articlereview.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Spinner;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.articlereview.R;
-import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final CoordinatorLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppBarLayout appBarLayout;
+  public final FloatingActionButton fabAddReview;
 
   @NonNull
-  public final RecyclerView rvArticles;
+  public final RecyclerView recyclerView;
 
-  @NonNull
-  public final Spinner spinnerFilter;
-
-  @NonNull
-  public final TextView tvAvgRating;
-
-  @NonNull
-  public final TextView tvReviewCount;
-
-  @NonNull
-  public final TextView tvTotalTime;
-
-  private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull AppBarLayout appBarLayout, @NonNull RecyclerView rvArticles,
-      @NonNull Spinner spinnerFilter, @NonNull TextView tvAvgRating,
-      @NonNull TextView tvReviewCount, @NonNull TextView tvTotalTime) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
+      @NonNull FloatingActionButton fabAddReview, @NonNull RecyclerView recyclerView) {
     this.rootView = rootView;
-    this.appBarLayout = appBarLayout;
-    this.rvArticles = rvArticles;
-    this.spinnerFilter = spinnerFilter;
-    this.tvAvgRating = tvAvgRating;
-    this.tvReviewCount = tvReviewCount;
-    this.tvTotalTime = tvTotalTime;
+    this.fabAddReview = fabAddReview;
+    this.recyclerView = recyclerView;
   }
 
   @Override
   @NonNull
-  public CoordinatorLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -80,44 +60,19 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.appBarLayout;
-      AppBarLayout appBarLayout = ViewBindings.findChildViewById(rootView, id);
-      if (appBarLayout == null) {
+      id = R.id.fabAddReview;
+      FloatingActionButton fabAddReview = ViewBindings.findChildViewById(rootView, id);
+      if (fabAddReview == null) {
         break missingId;
       }
 
-      id = R.id.rvArticles;
-      RecyclerView rvArticles = ViewBindings.findChildViewById(rootView, id);
-      if (rvArticles == null) {
+      id = R.id.recyclerView;
+      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerView == null) {
         break missingId;
       }
 
-      id = R.id.spinnerFilter;
-      Spinner spinnerFilter = ViewBindings.findChildViewById(rootView, id);
-      if (spinnerFilter == null) {
-        break missingId;
-      }
-
-      id = R.id.tvAvgRating;
-      TextView tvAvgRating = ViewBindings.findChildViewById(rootView, id);
-      if (tvAvgRating == null) {
-        break missingId;
-      }
-
-      id = R.id.tvReviewCount;
-      TextView tvReviewCount = ViewBindings.findChildViewById(rootView, id);
-      if (tvReviewCount == null) {
-        break missingId;
-      }
-
-      id = R.id.tvTotalTime;
-      TextView tvTotalTime = ViewBindings.findChildViewById(rootView, id);
-      if (tvTotalTime == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((CoordinatorLayout) rootView, appBarLayout, rvArticles,
-          spinnerFilter, tvAvgRating, tvReviewCount, tvTotalTime);
+      return new ActivityMainBinding((ConstraintLayout) rootView, fabAddReview, recyclerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
