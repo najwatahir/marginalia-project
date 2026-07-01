@@ -38,11 +38,6 @@
         <activity android:name="com.example.articlereview.ui.DetailActivity" />
         <activity android:name="com.example.articlereview.ui.AddReviewActivity" />
 
-        <service
-            android:name="androidx.room.MultiInstanceInvalidationService"
-            android:directBootAware="true"
-            android:exported="false" />
-
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.example.articlereview.androidx-startup"

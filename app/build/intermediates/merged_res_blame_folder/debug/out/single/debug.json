@@ -1,126 +1,122 @@
 [
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\anim_fade_in.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\anim\\fade_in.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.articlereview.app-merged_res-33:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/drawable_bg_spinner.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/drawable/bg_spinner.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\drawable_bg_source_chip.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\drawable\\bg_source_chip.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/drawable_bg_stats_row.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/drawable/bg_stats_row.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\drawable_circle_accent.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\drawable\\circle_accent.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/anim_fade_in.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/anim/fade_in.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.articlereview.app-merged_res-33:/layout_activity_main.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\drawable_bg_input_rounded.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\drawable\\bg_input_rounded.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/drawable_bg_source_chip.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/drawable/bg_source_chip.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.articlereview.app-merged_res-33:/drawable_bg_chip.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/drawable/bg_chip.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\layout_activity_add_review.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\layout\\activity_add_review.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/layout_activity_detail.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/layout/activity_detail.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.articlereview.app-merged_res-33:/layout_activity_splash.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/layout/activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\drawable_bg_spinner.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\drawable\\bg_spinner.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\drawable_bg_stats_row.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\drawable\\bg_stats_row.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/drawable_bg_summary_block.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/drawable/bg_summary_block.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\layout_item_article_review.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\layout\\item_article_review.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/layout_activity_add_review.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/layout/activity_add_review.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\layout\\activity_main.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\drawable_bg_circle.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\drawable\\bg_circle.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/drawable_bg_input_rounded.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/drawable/bg_input_rounded.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\layout_activity_detail.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\layout\\activity_detail.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\drawable_bg_chip.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\drawable\\bg_chip.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/anim_slide_up.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/anim/slide_up.xml"
     },
     {
-        "merged": "com.example.articlereview.app-merged_res-37:/layout_activity_add_review.xml.flat",
-        "source": "com.example.articlereview.app-main-39:/layout/activity_add_review.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\layout_activity_splash.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\layout\\activity_splash.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/drawable_bg_circle.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/drawable/bg_circle.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\drawable_bg_summary_block.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\drawable\\bg_summary_block.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/drawable_circle_accent.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/drawable/circle_accent.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.articlereview.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\anim_fade_out.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\anim\\fade_out.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/anim_fade_out.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/anim/fade_out.xml"
     },
     {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\mipmap-xxhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-merged_res-37:\\anim_slide_up.xml.flat",
-        "source": "C:\\Users\\najwa\\.gradle\\daemon\\8.2\\com.example.articlereview.app-main-39:\\anim\\slide_up.xml"
+        "merged": "com.example.articlereview.app-merged_res-33:/layout_item_article_review.xml.flat",
+        "source": "com.example.articlereview.app-main-35:/layout/item_article_review.xml"
     }
 ]

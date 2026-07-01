@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.articlereview.databinding.ActivityAddReviewBinding
 import com.example.articlereview.model.DatabaseHelper
 import com.example.articlereview.model.ArticleReview
-import com.example.articlereview.utils.StorageHelper
 import android.view.View
 
 class AddReviewActivity : AppCompatActivity() {

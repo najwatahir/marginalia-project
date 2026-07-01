@@ -4,6 +4,7 @@ package com.example.articlereview.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -43,6 +44,18 @@ public final class ActivityMainBinding implements ViewBinding {
   public final FloatingActionButton fabAddReview;
 
   @NonNull
+  public final LinearLayout navDiscover;
+
+  @NonNull
+  public final LinearLayout navHome;
+
+  @NonNull
+  public final LinearLayout navLibrary;
+
+  @NonNull
+  public final LinearLayout navProfile;
+
+  @NonNull
   public final RecyclerView recyclerView;
 
   @NonNull
@@ -57,6 +70,8 @@ public final class ActivityMainBinding implements ViewBinding {
   private ActivityMainBinding(@NonNull CoordinatorLayout rootView, @NonNull ChipGroup cgFilters,
       @NonNull Chip chipNature, @NonNull Chip chipPhilosophy, @NonNull Chip chipRecent,
       @NonNull Chip chipScience, @NonNull FloatingActionButton fabAddReview,
+      @NonNull LinearLayout navDiscover, @NonNull LinearLayout navHome,
+      @NonNull LinearLayout navLibrary, @NonNull LinearLayout navProfile,
       @NonNull RecyclerView recyclerView, @NonNull Toolbar toolbar, @NonNull TextView tvGreeting,
       @NonNull TextView tvStats) {
     this.rootView = rootView;
@@ -66,6 +81,10 @@ public final class ActivityMainBinding implements ViewBinding {
     this.chipRecent = chipRecent;
     this.chipScience = chipScience;
     this.fabAddReview = fabAddReview;
+    this.navDiscover = navDiscover;
+    this.navHome = navHome;
+    this.navLibrary = navLibrary;
+    this.navProfile = navProfile;
     this.recyclerView = recyclerView;
     this.toolbar = toolbar;
     this.tvGreeting = tvGreeting;
@@ -135,6 +154,30 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.navDiscover;
+      LinearLayout navDiscover = ViewBindings.findChildViewById(rootView, id);
+      if (navDiscover == null) {
+        break missingId;
+      }
+
+      id = R.id.navHome;
+      LinearLayout navHome = ViewBindings.findChildViewById(rootView, id);
+      if (navHome == null) {
+        break missingId;
+      }
+
+      id = R.id.navLibrary;
+      LinearLayout navLibrary = ViewBindings.findChildViewById(rootView, id);
+      if (navLibrary == null) {
+        break missingId;
+      }
+
+      id = R.id.navProfile;
+      LinearLayout navProfile = ViewBindings.findChildViewById(rootView, id);
+      if (navProfile == null) {
+        break missingId;
+      }
+
       id = R.id.recyclerView;
       RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
       if (recyclerView == null) {
@@ -160,8 +203,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((CoordinatorLayout) rootView, cgFilters, chipNature,
-          chipPhilosophy, chipRecent, chipScience, fabAddReview, recyclerView, toolbar, tvGreeting,
-          tvStats);
+          chipPhilosophy, chipRecent, chipScience, fabAddReview, navDiscover, navHome, navLibrary,
+          navProfile, recyclerView, toolbar, tvGreeting, tvStats);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

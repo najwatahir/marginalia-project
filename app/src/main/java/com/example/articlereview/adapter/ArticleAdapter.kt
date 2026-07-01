@@ -7,7 +7,7 @@ import com.example.articlereview.databinding.ItemArticleReviewBinding
 import com.example.articlereview.model.ArticleReview
 
 class ArticleAdapter(
-    private val articles: List<ArticleReview>,
+    private var articles: List<ArticleReview>,
     private val onItemClick: (ArticleReview) -> Unit
 ) : RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() {
 
@@ -40,4 +40,9 @@ class ArticleAdapter(
     }
 
     override fun getItemCount(): Int = articles.size
+
+    fun updateData(newArticles: List<ArticleReview>) {
+        articles = newArticles
+        notifyDataSetChanged()
+    }
 }

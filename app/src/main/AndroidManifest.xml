@@ -20,8 +20,11 @@
         </activity>
 
         <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.HomeActivity" />
+        <activity android:name=".ui.DiscoverActivity" />
         <activity android:name=".ui.DetailActivity" />
         <activity android:name=".ui.AddReviewActivity" />
+        <activity android:name=".ui.ProfileActivity" />
 
     </application>
 </manifest>

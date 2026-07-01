@@ -29,7 +29,7 @@ class SplashActivity : AppCompatActivity() {
         binding.tvTagline.startAnimation(slideUp)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
             finish()
         }, 2500)
