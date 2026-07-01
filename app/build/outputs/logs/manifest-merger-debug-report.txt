@@ -6,6 +6,8 @@ INJECTED from D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app
 INJECTED from D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\src\main\AndroidManifest.xml:2:1-27:12
 MERGED from [androidx.databinding:viewbinding:8.1.0] C:\Users\najwa\.gradle\caches\transforms-3\69450ff421593dd41487f46d24b581e9\transformed\jetified-viewbinding-8.1.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\najwa\.gradle\caches\transforms-3\70ea1c4fc2e82e4fa4bfee40fda46542\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\8a13059c97e436f7a3370a2fac019fc9\transformed\jetified-room-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\e693d961176eb18999e216d3802703bb\transformed\room-runtime-2.6.1\AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\najwa\.gradle\caches\transforms-3\d0b463662a6d33c1d2fb334cebfb5168\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\najwa\.gradle\caches\transforms-3\16f1602948a6f2a49c0ce5aa7d12a1b2\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\najwa\.gradle\caches\transforms-3\5e24c99d0ff19c5012cd00105eca8063\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -43,9 +45,11 @@ MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\najwa\.gradle\
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\najwa\.gradle\caches\transforms-3\f012ae4b402e452df611855c3b324058\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\najwa\.gradle\caches\transforms-3\12a81ee06f6f644e5ec7e762bc7bfc2b\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\najwa\.gradle\caches\transforms-3\826ef98c1a6d32e9517842dd6e0ae9cd\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\najwa\.gradle\caches\transforms-3\08714b6a43bf7824e41e4fdc60736502\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\najwa\.gradle\caches\transforms-3\26283391f0a8c3596fe0085a24cac0a1\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\najwa\.gradle\caches\transforms-3\4b8b9b5d8f25c0f3805eed299a4f6be8\transformed\sqlite-2.4.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\najwa\.gradle\caches\transforms-3\979b40bb6d178112aff734071baf7fef\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\najwa\.gradle\caches\transforms-3\0cce98b3adbfcba4460ec70f7694588d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\najwa\.gradle\caches\transforms-3\08714b6a43bf7824e41e4fdc60736502\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\najwa\.gradle\caches\transforms-3\0ef3682d95f461fb29e2a229fa219945\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\najwa\.gradle\caches\transforms-3\eca620b8436ec072c2318d32ef14ee82\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\najwa\.gradle\caches\transforms-3\4a4652f6afd08fd83d14d79da4af52b6\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -64,6 +68,8 @@ ADDED from D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\sr
 INJECTED from D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\src\main\AndroidManifest.xml:5:5-26:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\najwa\.gradle\caches\transforms-3\70ea1c4fc2e82e4fa4bfee40fda46542\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\najwa\.gradle\caches\transforms-3\70ea1c4fc2e82e4fa4bfee40fda46542\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\e693d961176eb18999e216d3802703bb\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\e693d961176eb18999e216d3802703bb\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\najwa\.gradle\caches\transforms-3\d0b463662a6d33c1d2fb334cebfb5168\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\najwa\.gradle\caches\transforms-3\d0b463662a6d33c1d2fb334cebfb5168\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\najwa\.gradle\caches\transforms-3\8b07d8a139ca4e1ca02018bc6fa6e8d7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
@@ -93,7 +99,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\na
 	android:allowBackup
 		ADDED from D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\src\main\AndroidManifest.xml:11:9-65
+		ADDED from D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\src\main\AndroidManifest.xml:11:9-51
 activity#com.example.articlereview.ui.SplashActivity
 ADDED from D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\src\main\AndroidManifest.xml:13:9-20:20
 	android:exported
@@ -130,6 +136,10 @@ MERGED from [androidx.databinding:viewbinding:8.1.0] C:\Users\najwa\.gradle\cach
 MERGED from [androidx.databinding:viewbinding:8.1.0] C:\Users\najwa\.gradle\caches\transforms-3\69450ff421593dd41487f46d24b581e9\transformed\jetified-viewbinding-8.1.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\najwa\.gradle\caches\transforms-3\70ea1c4fc2e82e4fa4bfee40fda46542\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\najwa\.gradle\caches\transforms-3\70ea1c4fc2e82e4fa4bfee40fda46542\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\8a13059c97e436f7a3370a2fac019fc9\transformed\jetified-room-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\8a13059c97e436f7a3370a2fac019fc9\transformed\jetified-room-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\e693d961176eb18999e216d3802703bb\transformed\room-runtime-2.6.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\e693d961176eb18999e216d3802703bb\transformed\room-runtime-2.6.1\AndroidManifest.xml:21:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\najwa\.gradle\caches\transforms-3\d0b463662a6d33c1d2fb334cebfb5168\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\najwa\.gradle\caches\transforms-3\d0b463662a6d33c1d2fb334cebfb5168\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\najwa\.gradle\caches\transforms-3\16f1602948a6f2a49c0ce5aa7d12a1b2\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
@@ -204,12 +214,16 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\najwa\.gradle\cach
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\najwa\.gradle\caches\transforms-3\12a81ee06f6f644e5ec7e762bc7bfc2b\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\najwa\.gradle\caches\transforms-3\826ef98c1a6d32e9517842dd6e0ae9cd\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\najwa\.gradle\caches\transforms-3\826ef98c1a6d32e9517842dd6e0ae9cd\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\najwa\.gradle\caches\transforms-3\08714b6a43bf7824e41e4fdc60736502\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\najwa\.gradle\caches\transforms-3\08714b6a43bf7824e41e4fdc60736502\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\najwa\.gradle\caches\transforms-3\26283391f0a8c3596fe0085a24cac0a1\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\najwa\.gradle\caches\transforms-3\26283391f0a8c3596fe0085a24cac0a1\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\najwa\.gradle\caches\transforms-3\4b8b9b5d8f25c0f3805eed299a4f6be8\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\najwa\.gradle\caches\transforms-3\4b8b9b5d8f25c0f3805eed299a4f6be8\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\najwa\.gradle\caches\transforms-3\979b40bb6d178112aff734071baf7fef\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\najwa\.gradle\caches\transforms-3\979b40bb6d178112aff734071baf7fef\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\najwa\.gradle\caches\transforms-3\0cce98b3adbfcba4460ec70f7694588d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\najwa\.gradle\caches\transforms-3\0cce98b3adbfcba4460ec70f7694588d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\najwa\.gradle\caches\transforms-3\08714b6a43bf7824e41e4fdc60736502\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\najwa\.gradle\caches\transforms-3\08714b6a43bf7824e41e4fdc60736502\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\najwa\.gradle\caches\transforms-3\0ef3682d95f461fb29e2a229fa219945\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\najwa\.gradle\caches\transforms-3\0ef3682d95f461fb29e2a229fa219945\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\najwa\.gradle\caches\transforms-3\eca620b8436ec072c2318d32ef14ee82\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
@@ -222,6 +236,16 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\najwa\.
 		INJECTED from D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\src\main\AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\e693d961176eb18999e216d3802703bb\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\e693d961176eb18999e216d3802703bb\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\e693d961176eb18999e216d3802703bb\transformed\room-runtime-2.6.1\AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\e693d961176eb18999e216d3802703bb\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\e693d961176eb18999e216d3802703bb\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\najwa\.gradle\caches\transforms-3\8b07d8a139ca4e1ca02018bc6fa6e8d7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\najwa\.gradle\caches\transforms-3\0827f896cdad57cd214e3348bb506062\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:24:9-32:20

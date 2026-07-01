@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="12dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginHorizontal="24dp"
     app:cardCornerRadius="16dp"
     app:cardElevation="2dp"
     app:cardBackgroundColor="@color/white">
@@ -13,121 +14,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="18dp">
+        android:padding="20dp">
 
-        <!-- Top row: tag + date -->
+        <!-- Top row: Avatar, Author, Time, Rating -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
-            <!-- Tag accent bar -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardTagAccent"
-                android:layout_width="3dp"
-                android:layout_height="14dp"
-                app:cardCornerRadius="2dp"
-                app:cardElevation="0dp"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@android:drawable/sym_def_app_icon"
+                android:background="@drawable/bg_circle"
+                android:clipToOutline="true"/>
 
-            <TextView
-                android:id="@+id/tvTag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Philosophy"
-                android:textSize="11sp"
-                android:textStyle="bold"
-                android:letterSpacing="0.06"
-                android:layout_marginStart="7dp"/>
-
-            <View
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:id="@+id/tvDate"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="May 8, 2025"
-                android:textSize="11sp"
-                android:textColor="@color/text_hint"/>
-        </LinearLayout>
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
 
-        <!-- Title -->
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="The Attention Economy Is Eating Itself"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:textColor="@color/text_primary"
-            android:fontFamily="serif"
-            android:lineSpacingMultiplier="1.2"
-            android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Author Name"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A1A1A"/>
 
-        <!-- Author + Source -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginTop="4dp">
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 days ago"
+                    android:textSize="12sp"
+                    android:textColor="#A0A0A0"/>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/tvAuthor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="L.M. Sacasas"
-                android:textSize="13sp"
-                android:textColor="@color/text_secondary"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" · "
-                android:textSize="13sp"
-                android:textColor="@color/text_hint"/>
-
-            <TextView
-                android:id="@+id/tvSource"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Substack"
-                android:textSize="13sp"
-                android:textColor="@color/text_secondary"/>
-        </LinearLayout>
-
-        <!-- Divider -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/divider"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"/>
-
-        <!-- Summary -->
-        <TextView
-            android:id="@+id/tvSummary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="A sharp critique on how attention is commodified..."
-            android:textSize="13sp"
-            android:textColor="@color/text_secondary"
-            android:lineSpacingMultiplier="1.5"
-            android:maxLines="2"
-            android:ellipsize="end"/>
-
-        <!-- Bottom row: rating + time + mood -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginTop="14dp">
-
-            <!-- Rating -->
             <RatingBar
                 android:id="@+id/ratingBar"
                 style="?android:attr/ratingBarStyleSmall"
@@ -135,47 +62,58 @@
                 android:layout_height="wrap_content"
                 android:numStars="5"
                 android:isIndicator="true"
-                android:progressTint="@color/accent_green"
-                android:rating="4.5"/>
-
-            <TextView
-                android:id="@+id/tvRating"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4.5"
-                android:textSize="12sp"
-                android:textColor="@color/text_secondary"
-                android:layout_marginStart="4dp"/>
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1"/>
-
-            <!-- Reading time -->
-            <TextView
-                android:id="@+id/tvReadingTime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12 min read"
-                android:textSize="11sp"
-                android:textColor="@color/text_hint"
-                android:layout_marginEnd="10dp"/>
-
-            <!-- Mood chip -->
-            <TextView
-                android:id="@+id/tvMood"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Thought-provoking"
-                android:textSize="10sp"
-                android:textColor="@color/accent_green"
-                android:background="@drawable/bg_chip"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp"
-                android:paddingTop="3dp"
-                android:paddingBottom="3dp"/>
+                android:progressTint="#6B9E78" />
         </LinearLayout>
-    </LinearLayout>
 
+        <!-- Quotation icon + Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&quot;"
+                android:textSize="24sp"
+                android:textColor="#E5E5E5"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Article Title"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="#1A1A1A"/>
+        </LinearLayout>
+
+        <!-- Summary text -->
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A profound exploration of how our surroundings influence our well-being."
+            android:textSize="14sp"
+            android:textColor="#6B6B6B"
+            android:lineSpacingMultiplier="1.4"
+            android:layout_marginTop="8dp"
+            android:maxLines="3"
+            android:ellipsize="end"/>
+
+        <!-- Read Full Review link -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read Full Review"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#6B9E78"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
 </androidx.cardview.widget.CardView>

@@ -4,13 +4,17 @@ package com.example.articlereview.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.articlereview.R;
+import com.google.android.material.chip.Chip;
+import com.google.android.material.chip.ChipGroup;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -18,7 +22,22 @@ import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CoordinatorLayout rootView;
+
+  @NonNull
+  public final ChipGroup cgFilters;
+
+  @NonNull
+  public final Chip chipNature;
+
+  @NonNull
+  public final Chip chipPhilosophy;
+
+  @NonNull
+  public final Chip chipRecent;
+
+  @NonNull
+  public final Chip chipScience;
 
   @NonNull
   public final FloatingActionButton fabAddReview;
@@ -26,16 +45,36 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final RecyclerView recyclerView;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton fabAddReview, @NonNull RecyclerView recyclerView) {
+  @NonNull
+  public final Toolbar toolbar;
+
+  @NonNull
+  public final TextView tvGreeting;
+
+  @NonNull
+  public final TextView tvStats;
+
+  private ActivityMainBinding(@NonNull CoordinatorLayout rootView, @NonNull ChipGroup cgFilters,
+      @NonNull Chip chipNature, @NonNull Chip chipPhilosophy, @NonNull Chip chipRecent,
+      @NonNull Chip chipScience, @NonNull FloatingActionButton fabAddReview,
+      @NonNull RecyclerView recyclerView, @NonNull Toolbar toolbar, @NonNull TextView tvGreeting,
+      @NonNull TextView tvStats) {
     this.rootView = rootView;
+    this.cgFilters = cgFilters;
+    this.chipNature = chipNature;
+    this.chipPhilosophy = chipPhilosophy;
+    this.chipRecent = chipRecent;
+    this.chipScience = chipScience;
     this.fabAddReview = fabAddReview;
     this.recyclerView = recyclerView;
+    this.toolbar = toolbar;
+    this.tvGreeting = tvGreeting;
+    this.tvStats = tvStats;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -60,6 +99,36 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.cgFilters;
+      ChipGroup cgFilters = ViewBindings.findChildViewById(rootView, id);
+      if (cgFilters == null) {
+        break missingId;
+      }
+
+      id = R.id.chipNature;
+      Chip chipNature = ViewBindings.findChildViewById(rootView, id);
+      if (chipNature == null) {
+        break missingId;
+      }
+
+      id = R.id.chipPhilosophy;
+      Chip chipPhilosophy = ViewBindings.findChildViewById(rootView, id);
+      if (chipPhilosophy == null) {
+        break missingId;
+      }
+
+      id = R.id.chipRecent;
+      Chip chipRecent = ViewBindings.findChildViewById(rootView, id);
+      if (chipRecent == null) {
+        break missingId;
+      }
+
+      id = R.id.chipScience;
+      Chip chipScience = ViewBindings.findChildViewById(rootView, id);
+      if (chipScience == null) {
+        break missingId;
+      }
+
       id = R.id.fabAddReview;
       FloatingActionButton fabAddReview = ViewBindings.findChildViewById(rootView, id);
       if (fabAddReview == null) {
@@ -72,7 +141,27 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, fabAddReview, recyclerView);
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      id = R.id.tvGreeting;
+      TextView tvGreeting = ViewBindings.findChildViewById(rootView, id);
+      if (tvGreeting == null) {
+        break missingId;
+      }
+
+      id = R.id.tvStats;
+      TextView tvStats = ViewBindings.findChildViewById(rootView, id);
+      if (tvStats == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((CoordinatorLayout) rootView, cgFilters, chipNature,
+          chipPhilosophy, chipRecent, chipScience, fabAddReview, recyclerView, toolbar, tvGreeting,
+          tvStats);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -3,7 +3,7 @@ package com.example.articlereview.model
 import java.io.Serializable
 
 data class ArticleReview(
-    val id: Int,
+    val id: Int = 0,
     val title: String,
     val author: String,
     val source: String,         // e.g. "Medium", "Substack", "Aeon"

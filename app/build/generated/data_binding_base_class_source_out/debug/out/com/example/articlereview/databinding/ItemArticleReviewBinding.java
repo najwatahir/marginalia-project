@@ -21,9 +21,6 @@ public final class ItemArticleReviewBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final CardView cardTagAccent;
-
-  @NonNull
   public final RatingBar ratingBar;
 
   @NonNull
@@ -33,42 +30,19 @@ public final class ItemArticleReviewBinding implements ViewBinding {
   public final TextView tvDate;
 
   @NonNull
-  public final TextView tvMood;
-
-  @NonNull
-  public final TextView tvRating;
-
-  @NonNull
-  public final TextView tvReadingTime;
-
-  @NonNull
-  public final TextView tvSource;
-
-  @NonNull
   public final TextView tvSummary;
-
-  @NonNull
-  public final TextView tvTag;
 
   @NonNull
   public final TextView tvTitle;
 
-  private ItemArticleReviewBinding(@NonNull CardView rootView, @NonNull CardView cardTagAccent,
-      @NonNull RatingBar ratingBar, @NonNull TextView tvAuthor, @NonNull TextView tvDate,
-      @NonNull TextView tvMood, @NonNull TextView tvRating, @NonNull TextView tvReadingTime,
-      @NonNull TextView tvSource, @NonNull TextView tvSummary, @NonNull TextView tvTag,
+  private ItemArticleReviewBinding(@NonNull CardView rootView, @NonNull RatingBar ratingBar,
+      @NonNull TextView tvAuthor, @NonNull TextView tvDate, @NonNull TextView tvSummary,
       @NonNull TextView tvTitle) {
     this.rootView = rootView;
-    this.cardTagAccent = cardTagAccent;
     this.ratingBar = ratingBar;
     this.tvAuthor = tvAuthor;
     this.tvDate = tvDate;
-    this.tvMood = tvMood;
-    this.tvRating = tvRating;
-    this.tvReadingTime = tvReadingTime;
-    this.tvSource = tvSource;
     this.tvSummary = tvSummary;
-    this.tvTag = tvTag;
     this.tvTitle = tvTitle;
   }
 
@@ -99,12 +73,6 @@ public final class ItemArticleReviewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.cardTagAccent;
-      CardView cardTagAccent = ViewBindings.findChildViewById(rootView, id);
-      if (cardTagAccent == null) {
-        break missingId;
-      }
-
       id = R.id.ratingBar;
       RatingBar ratingBar = ViewBindings.findChildViewById(rootView, id);
       if (ratingBar == null) {
@@ -123,39 +91,9 @@ public final class ItemArticleReviewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvMood;
-      TextView tvMood = ViewBindings.findChildViewById(rootView, id);
-      if (tvMood == null) {
-        break missingId;
-      }
-
-      id = R.id.tvRating;
-      TextView tvRating = ViewBindings.findChildViewById(rootView, id);
-      if (tvRating == null) {
-        break missingId;
-      }
-
-      id = R.id.tvReadingTime;
-      TextView tvReadingTime = ViewBindings.findChildViewById(rootView, id);
-      if (tvReadingTime == null) {
-        break missingId;
-      }
-
-      id = R.id.tvSource;
-      TextView tvSource = ViewBindings.findChildViewById(rootView, id);
-      if (tvSource == null) {
-        break missingId;
-      }
-
       id = R.id.tvSummary;
       TextView tvSummary = ViewBindings.findChildViewById(rootView, id);
       if (tvSummary == null) {
-        break missingId;
-      }
-
-      id = R.id.tvTag;
-      TextView tvTag = ViewBindings.findChildViewById(rootView, id);
-      if (tvTag == null) {
         break missingId;
       }
 
@@ -165,8 +103,8 @@ public final class ItemArticleReviewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemArticleReviewBinding((CardView) rootView, cardTagAccent, ratingBar, tvAuthor,
-          tvDate, tvMood, tvRating, tvReadingTime, tvSource, tvSummary, tvTag, tvTitle);
+      return new ItemArticleReviewBinding((CardView) rootView, ratingBar, tvAuthor, tvDate,
+          tvSummary, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

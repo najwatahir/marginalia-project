@@ -24,7 +24,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        android:theme="@style/Theme.ArticleReview" >
         <activity
             android:name="com.example.articlereview.ui.SplashActivity"
             android:exported="true" >
@@ -37,6 +37,11 @@
         <activity android:name="com.example.articlereview.ui.MainActivity" />
         <activity android:name="com.example.articlereview.ui.DetailActivity" />
         <activity android:name="com.example.articlereview.ui.AddReviewActivity" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

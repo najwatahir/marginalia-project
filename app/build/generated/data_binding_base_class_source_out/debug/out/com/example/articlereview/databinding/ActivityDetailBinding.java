@@ -4,16 +4,17 @@ package com.example.articlereview.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.articlereview.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,10 +24,16 @@ public final class ActivityDetailBinding implements ViewBinding {
   private final CoordinatorLayout rootView;
 
   @NonNull
-  public final CardView btnBack;
+  public final ImageView btnBack;
 
   @NonNull
-  public final View dividerTagAccent;
+  public final ImageView btnOptions;
+
+  @NonNull
+  public final ImageView btnShare;
+
+  @NonNull
+  public final FloatingActionButton fabEditReview;
 
   @NonNull
   public final RatingBar ratingBarDetail;
@@ -44,9 +51,6 @@ public final class ActivityDetailBinding implements ViewBinding {
   public final TextView tvDetailMood;
 
   @NonNull
-  public final TextView tvDetailRatingNum;
-
-  @NonNull
   public final TextView tvDetailReadingTime;
 
   @NonNull
@@ -56,45 +60,37 @@ public final class ActivityDetailBinding implements ViewBinding {
   public final TextView tvDetailSource;
 
   @NonNull
-  public final TextView tvDetailSummary;
-
-  @NonNull
   public final TextView tvDetailTag;
 
   @NonNull
   public final TextView tvDetailTitle;
 
   @NonNull
-  public final TextView tvRecommendedFor;
-
-  @NonNull
   public final TextView tvTakeaways;
 
-  private ActivityDetailBinding(@NonNull CoordinatorLayout rootView, @NonNull CardView btnBack,
-      @NonNull View dividerTagAccent, @NonNull RatingBar ratingBarDetail,
+  private ActivityDetailBinding(@NonNull CoordinatorLayout rootView, @NonNull ImageView btnBack,
+      @NonNull ImageView btnOptions, @NonNull ImageView btnShare,
+      @NonNull FloatingActionButton fabEditReview, @NonNull RatingBar ratingBarDetail,
       @NonNull NestedScrollView scrollView, @NonNull TextView tvDetailAuthor,
       @NonNull TextView tvDetailDate, @NonNull TextView tvDetailMood,
-      @NonNull TextView tvDetailRatingNum, @NonNull TextView tvDetailReadingTime,
-      @NonNull TextView tvDetailReview, @NonNull TextView tvDetailSource,
-      @NonNull TextView tvDetailSummary, @NonNull TextView tvDetailTag,
-      @NonNull TextView tvDetailTitle, @NonNull TextView tvRecommendedFor,
-      @NonNull TextView tvTakeaways) {
+      @NonNull TextView tvDetailReadingTime, @NonNull TextView tvDetailReview,
+      @NonNull TextView tvDetailSource, @NonNull TextView tvDetailTag,
+      @NonNull TextView tvDetailTitle, @NonNull TextView tvTakeaways) {
     this.rootView = rootView;
     this.btnBack = btnBack;
-    this.dividerTagAccent = dividerTagAccent;
+    this.btnOptions = btnOptions;
+    this.btnShare = btnShare;
+    this.fabEditReview = fabEditReview;
     this.ratingBarDetail = ratingBarDetail;
     this.scrollView = scrollView;
     this.tvDetailAuthor = tvDetailAuthor;
     this.tvDetailDate = tvDetailDate;
     this.tvDetailMood = tvDetailMood;
-    this.tvDetailRatingNum = tvDetailRatingNum;
     this.tvDetailReadingTime = tvDetailReadingTime;
     this.tvDetailReview = tvDetailReview;
     this.tvDetailSource = tvDetailSource;
-    this.tvDetailSummary = tvDetailSummary;
     this.tvDetailTag = tvDetailTag;
     this.tvDetailTitle = tvDetailTitle;
-    this.tvRecommendedFor = tvRecommendedFor;
     this.tvTakeaways = tvTakeaways;
   }
 
@@ -126,14 +122,26 @@ public final class ActivityDetailBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btnBack;
-      CardView btnBack = ViewBindings.findChildViewById(rootView, id);
+      ImageView btnBack = ViewBindings.findChildViewById(rootView, id);
       if (btnBack == null) {
         break missingId;
       }
 
-      id = R.id.dividerTagAccent;
-      View dividerTagAccent = ViewBindings.findChildViewById(rootView, id);
-      if (dividerTagAccent == null) {
+      id = R.id.btnOptions;
+      ImageView btnOptions = ViewBindings.findChildViewById(rootView, id);
+      if (btnOptions == null) {
+        break missingId;
+      }
+
+      id = R.id.btnShare;
+      ImageView btnShare = ViewBindings.findChildViewById(rootView, id);
+      if (btnShare == null) {
+        break missingId;
+      }
+
+      id = R.id.fabEditReview;
+      FloatingActionButton fabEditReview = ViewBindings.findChildViewById(rootView, id);
+      if (fabEditReview == null) {
         break missingId;
       }
 
@@ -167,12 +175,6 @@ public final class ActivityDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvDetailRatingNum;
-      TextView tvDetailRatingNum = ViewBindings.findChildViewById(rootView, id);
-      if (tvDetailRatingNum == null) {
-        break missingId;
-      }
-
       id = R.id.tvDetailReadingTime;
       TextView tvDetailReadingTime = ViewBindings.findChildViewById(rootView, id);
       if (tvDetailReadingTime == null) {
@@ -191,12 +193,6 @@ public final class ActivityDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvDetailSummary;
-      TextView tvDetailSummary = ViewBindings.findChildViewById(rootView, id);
-      if (tvDetailSummary == null) {
-        break missingId;
-      }
-
       id = R.id.tvDetailTag;
       TextView tvDetailTag = ViewBindings.findChildViewById(rootView, id);
       if (tvDetailTag == null) {
@@ -209,22 +205,16 @@ public final class ActivityDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvRecommendedFor;
-      TextView tvRecommendedFor = ViewBindings.findChildViewById(rootView, id);
-      if (tvRecommendedFor == null) {
-        break missingId;
-      }
-
       id = R.id.tvTakeaways;
       TextView tvTakeaways = ViewBindings.findChildViewById(rootView, id);
       if (tvTakeaways == null) {
         break missingId;
       }
 
-      return new ActivityDetailBinding((CoordinatorLayout) rootView, btnBack, dividerTagAccent,
-          ratingBarDetail, scrollView, tvDetailAuthor, tvDetailDate, tvDetailMood,
-          tvDetailRatingNum, tvDetailReadingTime, tvDetailReview, tvDetailSource, tvDetailSummary,
-          tvDetailTag, tvDetailTitle, tvRecommendedFor, tvTakeaways);
+      return new ActivityDetailBinding((CoordinatorLayout) rootView, btnBack, btnOptions, btnShare,
+          fabEditReview, ratingBarDetail, scrollView, tvDetailAuthor, tvDetailDate, tvDetailMood,
+          tvDetailReadingTime, tvDetailReview, tvDetailSource, tvDetailTag, tvDetailTitle,
+          tvTakeaways);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

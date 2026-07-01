@@ -7,12 +7,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.articlereview.adapter.ArticleAdapter
 import com.example.articlereview.databinding.ActivityMainBinding
 import com.example.articlereview.model.ArticleDataSource
+import com.example.articlereview.model.DatabaseHelper
 import com.example.articlereview.utils.StorageHelper
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var storageHelper: StorageHelper
+    private lateinit var dbHelper: DatabaseHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         storageHelper = StorageHelper(this)
+        dbHelper = DatabaseHelper(this)
 
         // Setup RecyclerView
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
@@ -39,17 +42,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupRecyclerView() {
-        // Gabungkan data dari Local Storage dan Data Bawaan
-        val localArticles = storageHelper.getArticles()
-        val defaultArticles = ArticleDataSource.getSampleArticles() // Asumsi kamu sudah punya file data bawaan ini
-        val allArticles = localArticles + defaultArticles
+        Thread {
+            val localArticles = dbHelper.getAllReviews()
+            val defaultArticles = ArticleDataSource.getSampleArticles()
+            val allArticles = localArticles + defaultArticles
 
-        val adapter = ArticleAdapter(allArticles) { article ->
-            val intent = Intent(this, DetailActivity::class.java).apply {
-                putExtra("EXTRA_ARTICLE", article)
+            runOnUiThread {
+                binding.tvStats.text = "You have ${allArticles.size} reviews in your library."
+                val adapter = ArticleAdapter(allArticles) { article ->
+                    val intent = Intent(this, DetailActivity::class.java).apply {
+                        putExtra(DetailActivity.EXTRA_ARTICLE, article)
+                    }
+                    startActivity(intent)
+                }
+                binding.recyclerView.adapter = adapter
             }
-            startActivity(intent)
-        }
-        binding.recyclerView.adapter = adapter
+        }.start()
     }
 }

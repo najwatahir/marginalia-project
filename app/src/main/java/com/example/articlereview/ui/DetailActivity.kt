@@ -9,6 +9,8 @@ class DetailActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailBinding
 
+    private var currentArticleId: Int = -1
+
     companion object {
         const val EXTRA_ARTICLE = "extra_article"
     }
@@ -19,9 +21,46 @@ class DetailActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val article = intent.getSerializableExtra(EXTRA_ARTICLE) as? ArticleReview
+        currentArticleId = article?.id ?: -1
         article?.let { bindArticle(it) }
 
         binding.btnBack.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
+
+        binding.fabEditReview.setOnClickListener {
+            // Need the latest article object, which is currently bound.
+            // But we can just use the initial or updated one via getSerializableExtra
+            val currentArticle = intent.getSerializableExtra(EXTRA_ARTICLE) as? ArticleReview
+            val editIntent = android.content.Intent(this, AddReviewActivity::class.java).apply {
+                putExtra(EXTRA_ARTICLE, currentArticle)
+            }
+            startActivity(editIntent)
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (currentArticleId != -1) {
+            Thread {
+                val dbHelper = com.example.articlereview.model.DatabaseHelper(this)
+                var updatedArticle = dbHelper.getReviewById(currentArticleId)
+                
+                // If not in DB, it might be a sample article
+                if (updatedArticle == null) {
+                    updatedArticle = com.example.articlereview.model.ArticleDataSource.getSampleArticles().find { it.id == currentArticleId }
+                }
+
+                runOnUiThread {
+                    if (updatedArticle == null) {
+                        // The article was deleted
+                        finish()
+                    } else {
+                        bindArticle(updatedArticle)
+                        // Update intent so edit button gets the latest
+                        intent.putExtra(EXTRA_ARTICLE, updatedArticle)
+                    }
+                }
+            }.start()
+        }
     }
 
     private fun bindArticle(article: ArticleReview) {
@@ -34,33 +73,13 @@ class DetailActivity : AppCompatActivity() {
             tvDetailReadingTime.text = "${article.readingTime} min read"
             tvDetailMood.text = article.reviewerMood
             ratingBarDetail.rating = article.rating
-            tvDetailRatingNum.text = String.format("%.1f / 5.0", article.rating)
-            tvDetailSummary.text = article.shortSummary
             tvDetailReview.text = article.fullReview
-            tvRecommendedFor.text = article.recommendedFor
 
             // Takeaways
             val takeawaysText = article.keyTakeaways.mapIndexed { i, t ->
                 "${i + 1}. $t"
             }.joinToString("\n\n")
             tvTakeaways.text = takeawaysText
-
-            // Tag color
-            val tagColor = getTagColor(article.coverTag)
-            tvDetailTag.setTextColor(tagColor)
-            dividerTagAccent.setBackgroundColor(tagColor)
-        }
-    }
-
-    private fun getTagColor(tag: String): Int {
-        return when (tag) {
-            "Philosophy" -> getColor(com.example.articlereview.R.color.tag_philosophy)
-            "Psychology" -> getColor(com.example.articlereview.R.color.tag_psychology)
-            "Wellbeing" -> getColor(com.example.articlereview.R.color.tag_wellbeing)
-            "Economics" -> getColor(com.example.articlereview.R.color.tag_economics)
-            "Science" -> getColor(com.example.articlereview.R.color.tag_science)
-            "Lifestyle" -> getColor(com.example.articlereview.R.color.tag_lifestyle)
-            else -> getColor(com.example.articlereview.R.color.accent_green)
         }
     }
 }

@@ -4,33 +4,37 @@ com.example.articlereview.app-drawerlayout-1.1.1-2 C:\Users\najwa\.gradle\caches
 com.example.articlereview.app-jetified-startup-runtime-1.1.1-3 C:\Users\najwa\.gradle\caches\transforms-3\12a81ee06f6f644e5ec7e762bc7bfc2b\transformed\jetified-startup-runtime-1.1.1\res
 com.example.articlereview.app-jetified-appcompat-resources-1.6.1-4 C:\Users\najwa\.gradle\caches\transforms-3\16f1602948a6f2a49c0ce5aa7d12a1b2\transformed\jetified-appcompat-resources-1.6.1\res
 com.example.articlereview.app-cardview-1.0.0-5 C:\Users\najwa\.gradle\caches\transforms-3\2471ce42ccba7c83b1cf465329396a44\transformed\cardview-1.0.0\res
-com.example.articlereview.app-jetified-emoji2-views-helper-1.2.0-6 C:\Users\najwa\.gradle\caches\transforms-3\31b6d8d3d9e8df2a156492f5ff72c62e\transformed\jetified-emoji2-views-helper-1.2.0\res
-com.example.articlereview.app-jetified-core-ktx-1.12.0-7 C:\Users\najwa\.gradle\caches\transforms-3\32ae3b089b16a32aa0636105e9a56061\transformed\jetified-core-ktx-1.12.0\res
-com.example.articlereview.app-jetified-lifecycle-viewmodel-savedstate-2.6.1-8 C:\Users\najwa\.gradle\caches\transforms-3\3ac3fe3b074430e7133257917f617fc3\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\res
-com.example.articlereview.app-core-1.12.0-9 C:\Users\najwa\.gradle\caches\transforms-3\3e209530d52db8edab343d2f85fec4ea\transformed\core-1.12.0\res
-com.example.articlereview.app-lifecycle-runtime-2.6.1-10 C:\Users\najwa\.gradle\caches\transforms-3\47256deb19c62943b72a1ea609c5c771\transformed\lifecycle-runtime-2.6.1\res
-com.example.articlereview.app-recyclerview-1.3.2-11 C:\Users\najwa\.gradle\caches\transforms-3\5cff361429368f8a042f2eda1bb2b119\transformed\recyclerview-1.3.2\res
-com.example.articlereview.app-appcompat-1.6.1-12 C:\Users\najwa\.gradle\caches\transforms-3\5e24c99d0ff19c5012cd00105eca8063\transformed\appcompat-1.6.1\res
-com.example.articlereview.app-jetified-annotation-experimental-1.3.0-13 C:\Users\najwa\.gradle\caches\transforms-3\6cedccff85df9cb1bddec95719d566f6\transformed\jetified-annotation-experimental-1.3.0\res
-com.example.articlereview.app-material-1.11.0-14 C:\Users\najwa\.gradle\caches\transforms-3\70ea1c4fc2e82e4fa4bfee40fda46542\transformed\material-1.11.0\res
-com.example.articlereview.app-lifecycle-livedata-2.6.1-15 C:\Users\najwa\.gradle\caches\transforms-3\7232f455d63379e1ea895b8c0796e260\transformed\lifecycle-livedata-2.6.1\res
-com.example.articlereview.app-jetified-activity-1.8.0-16 C:\Users\najwa\.gradle\caches\transforms-3\7ce0043ddcb6171c0534ac8d582deb69\transformed\jetified-activity-1.8.0\res
-com.example.articlereview.app-coordinatorlayout-1.1.0-17 C:\Users\najwa\.gradle\caches\transforms-3\87a7d38c5bf467927be07dd2043d93b4\transformed\coordinatorlayout-1.1.0\res
-com.example.articlereview.app-jetified-emoji2-1.2.0-18 C:\Users\najwa\.gradle\caches\transforms-3\8b07d8a139ca4e1ca02018bc6fa6e8d7\transformed\jetified-emoji2-1.2.0\res
-com.example.articlereview.app-jetified-viewpager2-1.1.0-beta02-19 C:\Users\najwa\.gradle\caches\transforms-3\9151960538fbcccdcbaad32fe8d20499\transformed\jetified-viewpager2-1.1.0-beta02\res
-com.example.articlereview.app-lifecycle-viewmodel-2.6.1-20 C:\Users\najwa\.gradle\caches\transforms-3\92c1fd739eb99cf319fb809b509b8f84\transformed\lifecycle-viewmodel-2.6.1\res
-com.example.articlereview.app-lifecycle-livedata-core-2.6.1-21 C:\Users\najwa\.gradle\caches\transforms-3\b09346bef5a684062f442f5e58cb28ee\transformed\lifecycle-livedata-core-2.6.1\res
-com.example.articlereview.app-jetified-glide-4.16.0-22 C:\Users\najwa\.gradle\caches\transforms-3\b6b13cf8851682921be7e9331ba1d8cb\transformed\jetified-glide-4.16.0\res
-com.example.articlereview.app-constraintlayout-2.1.4-23 C:\Users\najwa\.gradle\caches\transforms-3\d0b463662a6d33c1d2fb334cebfb5168\transformed\constraintlayout-2.1.4\res
-com.example.articlereview.app-transition-1.2.0-24 C:\Users\najwa\.gradle\caches\transforms-3\d323d616198fac6299ccf4b973683c23\transformed\transition-1.2.0\res
-com.example.articlereview.app-jetified-profileinstaller-1.3.0-25 C:\Users\najwa\.gradle\caches\transforms-3\f012ae4b402e452df611855c3b324058\transformed\jetified-profileinstaller-1.3.0\res
-com.example.articlereview.app-jetified-customview-poolingcontainer-1.0.0-26 C:\Users\najwa\.gradle\caches\transforms-3\f2587c2699ec02cb8d4835d142c42041\transformed\jetified-customview-poolingcontainer-1.0.0\res
-com.example.articlereview.app-fragment-1.3.6-27 C:\Users\najwa\.gradle\caches\transforms-3\fb004983d15c6ae0b30d80007944873e\transformed\fragment-1.3.6\res
-com.example.articlereview.app-jetified-savedstate-1.2.1-28 C:\Users\najwa\.gradle\caches\transforms-3\fb0212652771498e4812278d0e0e84c7\transformed\jetified-savedstate-1.2.1\res
-com.example.articlereview.app-pngs-29 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\build\generated\res\pngs\debug
-com.example.articlereview.app-resValues-30 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\build\generated\res\resValues\debug
-com.example.articlereview.app-packageDebugResources-31 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.articlereview.app-packageDebugResources-32 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.articlereview.app-merged_res-33 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\build\intermediates\merged_res\debug
-com.example.articlereview.app-debug-34 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\src\debug\res
-com.example.articlereview.app-main-35 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\src\main\res
+com.example.articlereview.app-sqlite-framework-2.4.0-6 C:\Users\najwa\.gradle\caches\transforms-3\26283391f0a8c3596fe0085a24cac0a1\transformed\sqlite-framework-2.4.0\res
+com.example.articlereview.app-jetified-emoji2-views-helper-1.2.0-7 C:\Users\najwa\.gradle\caches\transforms-3\31b6d8d3d9e8df2a156492f5ff72c62e\transformed\jetified-emoji2-views-helper-1.2.0\res
+com.example.articlereview.app-jetified-core-ktx-1.12.0-8 C:\Users\najwa\.gradle\caches\transforms-3\32ae3b089b16a32aa0636105e9a56061\transformed\jetified-core-ktx-1.12.0\res
+com.example.articlereview.app-jetified-lifecycle-viewmodel-savedstate-2.6.1-9 C:\Users\najwa\.gradle\caches\transforms-3\3ac3fe3b074430e7133257917f617fc3\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\res
+com.example.articlereview.app-core-1.12.0-10 C:\Users\najwa\.gradle\caches\transforms-3\3e209530d52db8edab343d2f85fec4ea\transformed\core-1.12.0\res
+com.example.articlereview.app-lifecycle-runtime-2.6.1-11 C:\Users\najwa\.gradle\caches\transforms-3\47256deb19c62943b72a1ea609c5c771\transformed\lifecycle-runtime-2.6.1\res
+com.example.articlereview.app-sqlite-2.4.0-12 C:\Users\najwa\.gradle\caches\transforms-3\4b8b9b5d8f25c0f3805eed299a4f6be8\transformed\sqlite-2.4.0\res
+com.example.articlereview.app-recyclerview-1.3.2-13 C:\Users\najwa\.gradle\caches\transforms-3\5cff361429368f8a042f2eda1bb2b119\transformed\recyclerview-1.3.2\res
+com.example.articlereview.app-appcompat-1.6.1-14 C:\Users\najwa\.gradle\caches\transforms-3\5e24c99d0ff19c5012cd00105eca8063\transformed\appcompat-1.6.1\res
+com.example.articlereview.app-jetified-annotation-experimental-1.3.0-15 C:\Users\najwa\.gradle\caches\transforms-3\6cedccff85df9cb1bddec95719d566f6\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.articlereview.app-material-1.11.0-16 C:\Users\najwa\.gradle\caches\transforms-3\70ea1c4fc2e82e4fa4bfee40fda46542\transformed\material-1.11.0\res
+com.example.articlereview.app-lifecycle-livedata-2.6.1-17 C:\Users\najwa\.gradle\caches\transforms-3\7232f455d63379e1ea895b8c0796e260\transformed\lifecycle-livedata-2.6.1\res
+com.example.articlereview.app-jetified-activity-1.8.0-18 C:\Users\najwa\.gradle\caches\transforms-3\7ce0043ddcb6171c0534ac8d582deb69\transformed\jetified-activity-1.8.0\res
+com.example.articlereview.app-coordinatorlayout-1.1.0-19 C:\Users\najwa\.gradle\caches\transforms-3\87a7d38c5bf467927be07dd2043d93b4\transformed\coordinatorlayout-1.1.0\res
+com.example.articlereview.app-jetified-room-ktx-2.6.1-20 C:\Users\najwa\.gradle\caches\transforms-3\8a13059c97e436f7a3370a2fac019fc9\transformed\jetified-room-ktx-2.6.1\res
+com.example.articlereview.app-jetified-emoji2-1.2.0-21 C:\Users\najwa\.gradle\caches\transforms-3\8b07d8a139ca4e1ca02018bc6fa6e8d7\transformed\jetified-emoji2-1.2.0\res
+com.example.articlereview.app-jetified-viewpager2-1.1.0-beta02-22 C:\Users\najwa\.gradle\caches\transforms-3\9151960538fbcccdcbaad32fe8d20499\transformed\jetified-viewpager2-1.1.0-beta02\res
+com.example.articlereview.app-lifecycle-viewmodel-2.6.1-23 C:\Users\najwa\.gradle\caches\transforms-3\92c1fd739eb99cf319fb809b509b8f84\transformed\lifecycle-viewmodel-2.6.1\res
+com.example.articlereview.app-lifecycle-livedata-core-2.6.1-24 C:\Users\najwa\.gradle\caches\transforms-3\b09346bef5a684062f442f5e58cb28ee\transformed\lifecycle-livedata-core-2.6.1\res
+com.example.articlereview.app-jetified-glide-4.16.0-25 C:\Users\najwa\.gradle\caches\transforms-3\b6b13cf8851682921be7e9331ba1d8cb\transformed\jetified-glide-4.16.0\res
+com.example.articlereview.app-constraintlayout-2.1.4-26 C:\Users\najwa\.gradle\caches\transforms-3\d0b463662a6d33c1d2fb334cebfb5168\transformed\constraintlayout-2.1.4\res
+com.example.articlereview.app-transition-1.2.0-27 C:\Users\najwa\.gradle\caches\transforms-3\d323d616198fac6299ccf4b973683c23\transformed\transition-1.2.0\res
+com.example.articlereview.app-room-runtime-2.6.1-28 C:\Users\najwa\.gradle\caches\transforms-3\e693d961176eb18999e216d3802703bb\transformed\room-runtime-2.6.1\res
+com.example.articlereview.app-jetified-profileinstaller-1.3.0-29 C:\Users\najwa\.gradle\caches\transforms-3\f012ae4b402e452df611855c3b324058\transformed\jetified-profileinstaller-1.3.0\res
+com.example.articlereview.app-jetified-customview-poolingcontainer-1.0.0-30 C:\Users\najwa\.gradle\caches\transforms-3\f2587c2699ec02cb8d4835d142c42041\transformed\jetified-customview-poolingcontainer-1.0.0\res
+com.example.articlereview.app-fragment-1.3.6-31 C:\Users\najwa\.gradle\caches\transforms-3\fb004983d15c6ae0b30d80007944873e\transformed\fragment-1.3.6\res
+com.example.articlereview.app-jetified-savedstate-1.2.1-32 C:\Users\najwa\.gradle\caches\transforms-3\fb0212652771498e4812278d0e0e84c7\transformed\jetified-savedstate-1.2.1\res
+com.example.articlereview.app-pngs-33 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\build\generated\res\pngs\debug
+com.example.articlereview.app-resValues-34 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\build\generated\res\resValues\debug
+com.example.articlereview.app-packageDebugResources-35 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.articlereview.app-packageDebugResources-36 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.articlereview.app-merged_res-37 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\build\intermediates\merged_res\debug
+com.example.articlereview.app-debug-38 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\src\debug\res
+com.example.articlereview.app-main-39 D:\Udayana\Kuliah\Semester 4\Progmob\mobile-programming-2-main\app\src\main\res
