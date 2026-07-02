@@ -71,7 +71,6 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         values.put(COLUMN_REVIEWER_MOOD, review.reviewerMood)
 
         val id = db.insert(TABLE_REVIEWS, null, values)
-        db.close()
         return id
     }
 
@@ -103,7 +102,6 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
             } while (cursor.moveToNext())
         }
         cursor.close()
-        db.close()
         return reviewList
     }
 
@@ -131,7 +129,6 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
             )
         }
         cursor.close()
-        db.close()
         return review
     }
 
@@ -154,14 +151,12 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         values.put(COLUMN_REVIEWER_MOOD, review.reviewerMood)
 
         val rowsUpdated = db.update(TABLE_REVIEWS, values, "$COLUMN_ID = ?", arrayOf(review.id.toString()))
-        db.close()
         return rowsUpdated
     }
 
     fun deleteReview(id: Int): Int {
         val db = this.writableDatabase
         val rowsDeleted = db.delete(TABLE_REVIEWS, "$COLUMN_ID = ?", arrayOf(id.toString()))
-        db.close()
         return rowsDeleted
     }
 }

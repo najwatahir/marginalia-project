@@ -32,9 +32,28 @@ class ProfileActivity : AppCompatActivity() {
 
     private val imagePickerLauncher = registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
         uri?.let {
-            contentResolver.takePersistableUriPermission(it, Intent.FLAG_GRANT_READ_URI_PERMISSION)
-            saveProfileImage(it.toString())
-            loadProfileImage(it.toString())
+            // Copy the image to internal storage so it persists
+            // (GetContent URIs are temporary and don't support takePersistableUriPermission)
+            val savedPath = copyImageToInternal(it)
+            if (savedPath != null) {
+                saveProfileImage(savedPath)
+                loadProfileImage(savedPath)
+            }
+        }
+    }
+
+    private fun copyImageToInternal(sourceUri: Uri): String? {
+        return try {
+            val inputStream = contentResolver.openInputStream(sourceUri) ?: return null
+            val file = java.io.File(filesDir, "profile_avatar.jpg")
+            file.outputStream().use { output ->
+                inputStream.copyTo(output)
+            }
+            inputStream.close()
+            file.absolutePath
+        } catch (e: Exception) {
+            e.printStackTrace()
+            null
         }
     }
 
@@ -70,14 +89,19 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 
-    private fun loadProfileImage(uriString: String) {
+    private fun loadProfileImage(path: String) {
         try {
-            val uri = Uri.parse(uriString)
+            val source: Any = if (path.startsWith("/")) {
+                java.io.File(path)
+            } else {
+                Uri.parse(path)
+            }
             Glide.with(this)
-                .load(uri)
+                .load(source)
                 .transform(CircleCrop())
                 .into(binding.ivProfileAvatar)
             binding.ivProfileAvatar.setPadding(0, 0, 0, 0)
+            binding.ivProfileAvatar.imageTintList = null
         } catch (e: Exception) {
             e.printStackTrace()
         }

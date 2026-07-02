@@ -38,18 +38,23 @@ class HomeActivity : AppCompatActivity() {
     private fun loadProfileHeader() {
         val prefs = getSharedPreferences("ProfilePrefs", Context.MODE_PRIVATE)
         val name = prefs.getString("name", "Marginalia Reader")
-        val avatarUri = prefs.getString("avatarUri", null)
+        val avatarPath = prefs.getString("avatarUri", null)
 
         binding.tvHomeName.text = name
 
-        if (avatarUri != null) {
+        if (avatarPath != null) {
             try {
-                val uri = Uri.parse(avatarUri)
+                val source: Any = if (avatarPath.startsWith("/")) {
+                    java.io.File(avatarPath)
+                } else {
+                    Uri.parse(avatarPath)
+                }
                 Glide.with(this)
-                    .load(uri)
+                    .load(source)
                     .transform(CircleCrop())
                     .into(binding.ivHomeAvatar)
                 binding.ivHomeAvatar.setPadding(0, 0, 0, 0)
+                binding.ivHomeAvatar.imageTintList = null
             } catch (e: Exception) {
                 e.printStackTrace()
             }
