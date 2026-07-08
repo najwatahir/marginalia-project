@@ -7,6 +7,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.resource.bitmap.CircleCrop
 import com.example.articlereview.adapter.ArticleAdapter
 import com.example.articlereview.adapter.TrendingAdapter
@@ -51,6 +52,8 @@ class HomeActivity : AppCompatActivity() {
                 }
                 Glide.with(this)
                     .load(source)
+                    .skipMemoryCache(true)
+                    .diskCacheStrategy(DiskCacheStrategy.NONE)
                     .transform(CircleCrop())
                     .into(binding.ivHomeAvatar)
                 binding.ivHomeAvatar.setPadding(0, 0, 0, 0)
