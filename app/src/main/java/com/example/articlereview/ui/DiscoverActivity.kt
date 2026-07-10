@@ -129,12 +129,12 @@ class DiscoverActivity : AppCompatActivity() {
         
         var filteredList = allArticles
 
-        // 1. Filter by Topic
+
         if (selectedTopic != null) {
             filteredList = filteredList.filter { it.coverTag == selectedTopic }
         }
 
-        // 2. Filter by Search Query (Title or Author)
+
         if (query.isNotEmpty()) {
             filteredList = filteredList.filter {
                 it.title.lowercase().contains(query) || it.author.lowercase().contains(query)

@@ -190,20 +190,20 @@ class ProfileActivity : AppCompatActivity() {
 
 
     private fun displayStats(articles: List<ArticleReview>) {
-        // Total articles
+
         binding.tvTotalArticles.text = articles.size.toString()
 
-        // Average rating
+
         val avgRating = if (articles.isNotEmpty())
             articles.map { it.rating.toDouble() }.average() else 0.0
         binding.tvAvgRating.text = String.format("%.1f", avgRating)
 
-        // Favorite topic (most articles)
+
         val favTopic = articles.groupBy { it.coverTag }
             .maxByOrNull { it.value.size }?.key ?: "N/A"
         binding.tvFavoriteTopic.text = favTopic
 
-        // Reading streak (total collection count)
+
         binding.tvStreakCount.text = articles.size.toString()
         binding.tvStreakLabel.text = "articles in your collection"
     }

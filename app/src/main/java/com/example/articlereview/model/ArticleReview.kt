@@ -6,7 +6,7 @@ data class ArticleReview(
     val id: Int = 0,
     val title: String,
     val author: String,
-    val source: String,
+    val source: String, 
     val sourceUrl: String,
     val coverTag: String,
     val readingTime: Int,
