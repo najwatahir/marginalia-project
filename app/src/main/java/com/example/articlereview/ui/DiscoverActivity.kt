@@ -67,7 +67,7 @@ class DiscoverActivity : AppCompatActivity() {
     private fun setupChips(topics: List<String>) {
         binding.chipGroupTopics.removeAllViews()
 
-        // "All" chip
+
         val allChip = createChip("All")
         allChip.isChecked = true
         allChip.setOnCheckedChangeListener { _, isChecked ->
@@ -78,7 +78,7 @@ class DiscoverActivity : AppCompatActivity() {
         }
         binding.chipGroupTopics.addView(allChip)
 
-        // Topic chips
+
         for (topic in topics) {
             val chip = createChip(topic)
             chip.setOnCheckedChangeListener { _, isChecked ->

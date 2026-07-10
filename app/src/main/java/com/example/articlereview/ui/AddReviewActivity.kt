@@ -62,7 +62,7 @@ class AddReviewActivity : AppCompatActivity() {
             val fullReview = binding.etFullReview.text.toString().trim()
             val rating = binding.ratingBar.rating
 
-            // Extract number from reading duration string if possible, else 0
+
             val readingTimeInt = readingDuration.filter { it.isDigit() }.toIntOrNull() ?: 0
 
             if (title.isNotEmpty() && fullReview.isNotEmpty()) {
@@ -71,7 +71,7 @@ class AddReviewActivity : AppCompatActivity() {
                     author = author.ifEmpty { "Anonymous" },
                     source = source.ifEmpty { "Personal Note" },
                     sourceUrl = binding.etImport.text.toString().trim(),
-                    coverTag = "Philosophy", // Hardcode for now or get from chip group
+                    coverTag = "Philosophy",
                     dateRead = "Just now",
                     rating = rating,
                     readingTime = readingTimeInt,
@@ -79,7 +79,7 @@ class AddReviewActivity : AppCompatActivity() {
                     fullReview = fullReview,
                     keyTakeaways = listOf("Personal reflection"),
                     recommendedFor = "Everyone",
-                    reviewerMood = "Reflective" // Hardcode for now or get from chip group
+                    reviewerMood = "Reflective"
                 )
 
                 Thread {

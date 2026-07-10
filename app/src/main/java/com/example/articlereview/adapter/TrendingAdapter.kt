@@ -31,7 +31,7 @@ class TrendingAdapter(
         holder.tvTag.text = article.coverTag.uppercase()
         holder.tvTitle.text = article.title
         
-        // Mocking a reviewer name since our model just has author of the original article
+
         holder.tvReviewer.text = "By ${article.author}"
         holder.tvRating.text = article.rating.toString()
 

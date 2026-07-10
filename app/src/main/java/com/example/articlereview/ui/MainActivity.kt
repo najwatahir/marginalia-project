@@ -22,17 +22,17 @@ class MainActivity : AppCompatActivity() {
 
         dbHelper = DatabaseHelper(this)
 
-        // Setup RecyclerView
+
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
 
-        // Tombol Tambah Review
-        // Ini yang bikin tombolnya bisa di-klik dan pindah halaman
+
+
         binding.fabAddReview.setOnClickListener {
             val intent = Intent(this, AddReviewActivity::class.java)
             startActivity(intent)
         }
 
-        // Bottom Navigation
+
         binding.navHome.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // Gunakan onResume agar list otomatis refresh setelah kembali dari AddReviewActivity
+
     override fun onResume() {
         super.onResume()
         setupRecyclerView()

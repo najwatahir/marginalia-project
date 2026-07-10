@@ -32,8 +32,8 @@ class ProfileActivity : AppCompatActivity() {
 
     private val imagePickerLauncher = registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
         uri?.let {
-            // Copy the image to internal storage so it persists
-            // (GetContent URIs are temporary and don't support takePersistableUriPermission)
+
+
             val savedPath = copyImageToInternal(it)
             if (savedPath != null) {
                 saveProfileImage(savedPath)
@@ -184,7 +184,7 @@ class ProfileActivity : AppCompatActivity() {
         }.start()
     }
 
-    // ─── Stats ──────────────────────────────────────────────
+
 
     private fun displayStats(articles: List<ArticleReview>) {
         // Total articles
@@ -205,7 +205,7 @@ class ProfileActivity : AppCompatActivity() {
         binding.tvStreakLabel.text = "articles in your collection"
     }
 
-    // ─── Articles by Topic ──────────────────────────────────
+
 
     private fun displayTopicBreakdown(articles: List<ArticleReview>) {
         val topicCounts = articles.groupBy { it.coverTag }
@@ -218,7 +218,7 @@ class ProfileActivity : AppCompatActivity() {
         binding.topicContainer.removeAllViews()
 
         for ((topic, count) in topicCounts) {
-            // Row container
+
             val row = LinearLayout(this).apply {
                 orientation = LinearLayout.VERTICAL
                 layoutParams = LinearLayout.LayoutParams(
@@ -227,7 +227,7 @@ class ProfileActivity : AppCompatActivity() {
                 ).apply { bottomMargin = 16.dpToPx() }
             }
 
-            // Header: topic name + count
+
             val header = LinearLayout(this).apply {
                 orientation = LinearLayout.HORIZONTAL
                 gravity = Gravity.CENTER_VERTICAL
@@ -256,7 +256,7 @@ class ProfileActivity : AppCompatActivity() {
             header.addView(topicName)
             header.addView(countText)
 
-            // Progress bar
+
             val progressBar = LinearProgressIndicator(this@ProfileActivity).apply {
                 max = maxCount
                 setProgressCompat(count, false)
@@ -275,7 +275,7 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 
-    // ─── Reading Moods ──────────────────────────────────────
+
 
     private fun displayMoods(articles: List<ArticleReview>) {
         val moods = articles.map { it.reviewerMood }.distinct()
@@ -297,7 +297,7 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 
-    // ─── Recent Activity ────────────────────────────────────
+
 
     private fun displayRecentActivity(articles: List<ArticleReview>) {
         val recent = articles.take(5)
@@ -354,7 +354,7 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 
-    // ─── Utility ────────────────────────────────────────────
+
 
     private fun Int.dpToPx(): Int = (this * resources.displayMetrics.density).toInt()
 }

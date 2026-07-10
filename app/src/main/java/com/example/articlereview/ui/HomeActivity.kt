@@ -62,20 +62,20 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun setupRecyclerViews() {
-        // Setup Trending (Horizontal)
+
         binding.rvTrending.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         
-        // Setup Community (Vertical)
+
         binding.rvCommunity.layoutManager = LinearLayoutManager(this)
 
         Thread {
             val localArticles = dbHelper.getAllReviews()
             val sampleArticles = ArticleDataSource.getSampleArticles()
             
-            // Mock trending: Highest rated samples
+
             val trending = sampleArticles.sortedByDescending { it.rating }.take(5)
             
-            // Mock community: Mix of local and samples, randomized or just all
+
             val community = (localArticles + sampleArticles).shuffled().take(10)
 
             runOnUiThread {

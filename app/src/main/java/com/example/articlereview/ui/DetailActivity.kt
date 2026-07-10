@@ -27,8 +27,8 @@ class DetailActivity : AppCompatActivity() {
         binding.btnBack.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
 
         binding.fabEditReview.setOnClickListener {
-            // Need the latest article object, which is currently bound.
-            // But we can just use the initial or updated one via getSerializableExtra
+
+
             val currentArticle = intent.getSerializableExtra(EXTRA_ARTICLE) as? ArticleReview
             val editIntent = android.content.Intent(this, AddReviewActivity::class.java).apply {
                 putExtra(EXTRA_ARTICLE, currentArticle)
@@ -44,18 +44,18 @@ class DetailActivity : AppCompatActivity() {
                 val dbHelper = com.example.articlereview.model.DatabaseHelper(this)
                 var updatedArticle = dbHelper.getReviewById(currentArticleId)
                 
-                // If not in DB, it might be a sample article
+
                 if (updatedArticle == null) {
                     updatedArticle = com.example.articlereview.model.ArticleDataSource.getSampleArticles().find { it.id == currentArticleId }
                 }
 
                 runOnUiThread {
                     if (updatedArticle == null) {
-                        // The article was deleted
+
                         finish()
                     } else {
                         bindArticle(updatedArticle)
-                        // Update intent so edit button gets the latest
+
                         intent.putExtra(EXTRA_ARTICLE, updatedArticle)
                     }
                 }
@@ -75,7 +75,7 @@ class DetailActivity : AppCompatActivity() {
             ratingBarDetail.rating = article.rating
             tvDetailReview.text = article.fullReview
 
-            // Takeaways
+
             val takeawaysText = article.keyTakeaways.mapIndexed { i, t ->
                 "${i + 1}. $t"
             }.joinToString("\n\n")
